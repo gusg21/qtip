@@ -1,0 +1,114 @@
+html {
+    				display: table;
+    				margin: auto;
+				background-color: #19D4FF;
+			}
+			img {
+				max-width: 40%;
+			}
+			a {
+				color: #19D4FF;
+			}
+			a:visited {
+				color: #19D4FF;
+			}
+			a:hover {
+				color: #8CE9FF;
+			}
+			a:focus {
+				color: #8CE9FF;
+			}
+			h1,
+			h2,
+			h3 {
+				font-weight: 1100;
+				color: #8CE9FF;
+			}
+			h1,
+			h2 {
+				text-decoration: underline;
+			}
+			h1 {
+				font-size: 68px;
+			}
+			h2 {
+				font-size: 56px;
+			}
+			h3 {
+				font-size: 47px;
+			}
+			h4 {
+				font-size: 32px;
+			}
+			h5 {
+				font-size: 29px;
+			}
+			h6 {
+				font-size: 22px;
+			}
+			body {
+				display: table-cell;
+    				vertical-align: middle;
+				text-align: center;
+				font-family: Tacoma, verdana, serif;
+				border-right-color: black;
+				border-right-width: 2px;
+				background-color: white;
+	padding: 40px;
+	overflow-x: hidden; /* For Opera */
+	-webkit-box-shadow:
+		inset #19d4ff 0 0 0 5px,
+		inset #18cdf7 0 0 0 1px,
+		inset #53dfff 0 0 0 10px,
+		inset #50d8f7 0 0 0 11px,
+		inset #8ce9ff 0 0 0 16px,
+		inset #88e2f7 0 0 0 17px,
+		inset #c5f4ff 0 0 0 22px,
+		inset #bfecf7 0 0 0 23px;
+	-moz-box-shadow:
+		inset #19d4ff 0 0 0 5px,
+		inset #18cdf7 0 0 0 1px,
+		inset #53dfff 0 0 0 10px,
+		inset #50d8f7 0 0 0 11px,
+		inset #8ce9ff 0 0 0 16px,
+		inset #88e2f7 0 0 0 17px,
+		inset #c5f4ff 0 0 0 22px,
+		inset #bfecf7 0 0 0 23px;
+	box-shadow:
+		inset #19d4ff 0 0 0 5px,
+		inset #18cdf7 0 0 0 1px,
+		inset #53dfff 0 0 0 10px,
+		inset #50d8f7 0 0 0 11px,
+		inset #8ce9ff 0 0 0 16px,
+		inset #88e2f7 0 0 0 17px,
+		inset #c5f4ff 0 0 0 22px,
+		inset #bfecf7 0 0 0 23px;
+			}
+li {
+      list-style: none;
+    }
+
+    li:before {
+      /* For a round bullet */
+      content:'\2022';
+      /* For a square bullet */
+      /*content:'\25A0';*/
+      display: block;
+      position: relative;
+      max-width: 0px;
+      max-height: 0px;
+      left: -20px;
+      top: -3px;
+      color: yellow;
+      font-size: 20px;
+    }
+ul {
+    width:200px;
+    margin:0 auto;
+    text-align:left;
+}
+ol {
+    width:200px;
+    margin:0 auto;
+    text-align:left;
+}

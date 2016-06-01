@@ -1,0 +1,42 @@
+body {
+	background-color: lightgrey;
+	color: black;
+	font-family: Arial, verdana, serif;
+	font-weight: bolder;
+	font-size: 18px;
+	margin-left: 50px;
+	border-top-color: black;
+}
+strong {
+	font-size: 20.5px;
+}
+h1 {
+	font-size: 48px;
+	font-family: "Segoe Script", monospace;
+}
+h1,
+h2
+{
+	color: navy;
+	font-family: "Segoe Script", monospace;
+}
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Segoe Script", monospace;
+}
+a {
+	background-color: white;
+	text-decoration: underline;
+	color: navy;
+}
+a:hover {
+	background-color: lightgrey;
+	text-decoration: overline;
+	color: navy;
+}
+a:visited {
+	color: maroon;
+}
+

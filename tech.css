@@ -1,0 +1,42 @@
+body {
+	background-image: url("images/circuit.png");
+	color: white;
+	font-family: monospace, serif;
+	padding: 70px;
+	font-weight: bold;
+	font-size: 24px;
+}
+h1 {
+	font-size: 68px;
+}
+h2 {
+	font-size: 64px;
+}
+h3 {
+	font-size: 53px;
+}
+h4 {
+	font-size: 47px;
+}
+h5 {
+	font-size: 41px;
+}
+h6 {
+	font-size: 34px;
+}
+a {
+	color: lime;
+	text-decoration: underline;
+}
+a:hover {
+	color: lime;
+	text-decoration: overline;
+}
+a:focus {
+	color: lime;
+	text-decoration: overline;
+}
+a:visited {
+	color: lime;
+	text-decoration: underline;
+}
