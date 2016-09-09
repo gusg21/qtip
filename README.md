@@ -1,3 +1,5 @@
+##_NOTE: CREATE A FOLDER CALLED "images" IN THE "core/styles" FOLDER AND MOVE ALL PNGs THERE! GITHUB HATES IMAGES!_
+
 # qtip
 Qtip is a simple, static site generator in Batch. Wow, right? Who even USES that anymore?
 
