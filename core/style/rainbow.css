@@ -1,0 +1,11 @@
+body {
+	background-image: url("images/rainbow.png");
+	color: white;
+	font-family: "Segoe Script", sans-serif;
+}
+h1,
+h2,
+h3 {
+	color: black;
+	font-family: sans-serif;
+}

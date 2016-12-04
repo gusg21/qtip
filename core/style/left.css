@@ -1,0 +1,20 @@
+body {
+	margin-right: 70%;
+	font-family: sans-serif, serif, monospace;
+}
+a {
+	color: black;
+	text-decoration: underline;
+}
+a:hover {
+	color: black;
+	text-decoration: overline;
+}
+a:visited {
+	color: black;
+	text-decoration: underlne;
+}
+a:focus {
+	color: black;
+	text-decoration: overline;
+}
