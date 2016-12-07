@@ -32,10 +32,23 @@ echo.
 echo Appending Assets...
 echo ^<br^>^<a href="http://github.com/gusg21/"^>^<img src="core/style/images/qtip.png" alt="Made with Qtip by gusg21"^>^</a^> >> index.html
 echo Altering Qtip-flavored Markdown tags...
+echo Starting cscript compilers...
 ::BUTTON SYNTAX BECAUSE I ALWAYS FORGET:
 
 ::--Button-function()==Display--/Button
-cscript core/replace.vbs "index.html" "--Button-" "<button onClick='"
+cscript core/replace.vbs "index.html" "--Button-" "<button onClick='" --NoLogo
+if errorlevel 1 (
+echo =====================
+echo.
+echo ERROR: cScript error!
+echo.
+echo =====================
+echo Ending process...
+pause>nul
+goto end
+)
+echo (1/5)
+cscript core/replace.vbs "index.html" "==" "'>" --NoLogo
 if errorlevel 1 (
 echo =====================
 echo.
@@ -46,7 +59,8 @@ echo Ending process...
 pause>nul
 goto end
 ) 
-cscript core/replace.vbs "index.html" "==" "'>"
+echo (2/5)
+cscript core/replace.vbs "index.html" "--/Button" "</button>" --NoLogo
 if errorlevel 1 (
 echo =====================
 echo.
@@ -57,7 +71,8 @@ echo Ending process...
 pause>nul
 goto end
 ) 
-cscript core/replace.vbs "index.html" "--/Button" "</button>"
+echo (3/5)
+cscript core/replace.vbs "index.html" "title:" "<title>" --NoLogo
 if errorlevel 1 (
 echo =====================
 echo.
@@ -68,7 +83,8 @@ echo Ending process...
 pause>nul
 goto end
 ) 
-cscript core/replace.vbs "index.html" "title:" "<title>"
+echo (4/5)
+cscript core/replace.vbs "index.html" ":title" "</title>" --NoLogo
 if errorlevel 1 (
 echo =====================
 echo.
@@ -79,17 +95,7 @@ echo Ending process...
 pause>nul
 goto end
 ) 
-cscript core/replace.vbs "index.html" ":title" "</title>"
-if errorlevel 1 (
-echo =====================
-echo.
-echo ERROR: cScript error!
-echo.
-echo =====================
-echo Ending process...
-pause>nul
-goto end
-) 
+echo (5/5)
 echo Done!
 pause>nul
 :end
