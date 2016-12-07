@@ -14,6 +14,7 @@ goto end
 ) 
 echo Appending Stylesheets...
 :A
+if "%1" == "" (
 echo Style?
 echo.
 echo Installed Styles:
@@ -22,6 +23,9 @@ echo.
 echo Enter a name; if it is invalid, this program cannot check.
 echo.
 set /p input=^> 
+) else (
+set input=%1
+)
 echo ^<link rel='stylesheet' href='core/style/%input%.css' type='text/css'^> >> index.html
 echo.
 :done
