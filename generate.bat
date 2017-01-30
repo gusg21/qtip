@@ -3,11 +3,11 @@ echo Intializing...
 echo Converting...
 pandoc --verbose mdin/in.md > index.html
 if errorlevel 1 (
-echo ======================================
+echo ===================================================
 echo.
-echo ERROR: Install Pandoc! Cannot convert!
+echo ERROR: What happened to pandoc.exe? It's not there!
 echo.
-echo ======================================
+echo ===================================================
 echo Ending process...
 pause>nul
 goto end
@@ -30,7 +30,7 @@ echo ^<link rel='stylesheet' href='core/style/%input%.css' type='text/css'^> >> 
 echo.
 :done
 echo Appending Assets...
-echo ^<br^>^<a href="http://github.com/gusg21/"^>^<img src="core/style/images/qtip.png" alt="Made with Qtip by gusg21"^>^</a^> >> index.html
+echo ^<br^>^<a href="http://github.com/qtipsites/qtip"^>^<img src="core/style/images/qtip.png" alt="Made with Qtip by gusg21"^>^</a^> >> index.html
 echo Altering Qtip-flavored Markdown tags...
 echo Starting cscript compilers...
 ::BUTTON SYNTAX BECAUSE I ALWAYS FORGET:
