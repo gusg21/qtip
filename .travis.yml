@@ -1,0 +1,3 @@
+script:
+- echo Testing with style left...
+- generate.bat left
